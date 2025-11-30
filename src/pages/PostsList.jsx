@@ -6,7 +6,6 @@ export default function PostsList() {
     const [places, setPlaces] = useState([]);
 
     useEffect(() => {
-        // Временные данные исторических мест
         const historicalPlaces = [
             {
                 id: 1,

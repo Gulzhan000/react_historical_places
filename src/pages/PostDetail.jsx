@@ -7,7 +7,6 @@ export default function PostDetail() {
     const [place, setPlace] = useState(null);
 
     useEffect(() => {
-        // Данные для детальной страницы
         const placesData = {
             1: {
                 id: 1,
