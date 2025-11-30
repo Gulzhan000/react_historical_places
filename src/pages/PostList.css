@@ -1,0 +1,18 @@
+.post {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post h3 {
+    margin: 0;
+}
+
+.read-link{
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.read-link:hover{
+    text-decoration: underline;
+}
