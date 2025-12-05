@@ -1,5 +1,8 @@
-.main{
+.main {
     max-width: 900px;
-    margin: 20px auto;
-    padding: 0 20px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #E8ECF1; 
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.08);
 }

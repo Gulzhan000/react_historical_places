@@ -48,7 +48,7 @@ export default function PostsList() {
 
     return (
         <div>
-            <h1>Historical Places</h1>
+            <h1>Best Historical Places in the World to Visit</h1>
             <p>Discover the world's most fascinating historical sites</p>
             {places.map(place => (
                 <div key={place.id} className="post">

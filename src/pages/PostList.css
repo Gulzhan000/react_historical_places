@@ -1,18 +1,28 @@
 .post {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
+    margin-bottom: 25px;
+    padding: 18px;
+    background: white;
+    border-radius: 10px;
+    border-left: 4px solid #4FA3FF;
+    transition: 0.3s;
+}
+
+.post:hover {
+    transform: translateX(4px);
 }
 
 .post h3 {
     margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    color: #1B2A49;
 }
 
-.read-link{
-    color: #0077cc;
+.read-link {
+    color: #1B2A49;
     text-decoration: none;
+    font-weight: 500;
 }
 
-.read-link:hover{
-    text-decoration: underline;
+.read-link:hover {
+    color: #4FA3FF;
 }
