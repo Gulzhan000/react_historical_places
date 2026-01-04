@@ -1,9 +1,172 @@
 .footer {
-    padding: 18px 20px;
     background: #1B2A49;
-    color: white;
+    color: #E8ECF1;
+    padding: 60px 40px 30px;
+    margin-top: 60px;
+    border-top: 2px solid rgba(79, 163, 255, 0.3);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-section {
+    grid-column: 1 / -1;
     text-align: center;
-    margin-top: 40px;
-    border-top: 3px solid #4FA3FF;
-    font-family: "Segoe UI", sans-serif;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    color: #E8ECF1;
+}
+
+.logo-accent {
+    color: #FFD166;
+}
+
+.logo-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    color: rgba(232, 236, 241, 0.7);
+    margin: 5px 0 0 0;
+    letter-spacing: 2px;
+}
+
+.footer-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(232, 236, 241, 0.8);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #FFD166;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(79, 163, 255, 0.3);
+}
+
+.footer-links,
+.footer-contacts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li,
+.footer-contacts li {
+    margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+.footer-links a {
+    color: rgba(232, 236, 241, 0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4FA3FF;
+}
+
+.footer-contacts li {
+    color: rgba(232, 236, 241, 0.9);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(253, 254, 255);
+    border: 1px solid rgba(202, 212, 223, 0.564);
+    transition: all 0.3s ease;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    background: rgba(79, 163, 255, 0.15);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+    border-top: 1px solid rgba(79, 163, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.copyright {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: rgba(232, 236, 241, 0.7);
+}
+
+.developer {
+    color: #FFD166;
+    font-weight: 500;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-bottom-links a {
+    color: rgba(232, 236, 241, 0.7);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #4FA3FF;
 }

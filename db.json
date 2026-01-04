@@ -1,0 +1,40 @@
+{
+  "tours": [
+    {
+      "id": 1,
+      "title": "Great Pyramid of Giza",
+      "description": "The last surviving wonder of the ancient world",
+      "fullInfo": "The Great Pyramid of Giza is the oldest and largest of the three pyramids in the Giza pyramid complex bordering present-day Giza in Greater Cairo, Egypt. It is the oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact.",
+      "country": "Egypt",
+      "year": "2560 BC",
+      "duration": "7 days",
+      "price": "$2,500",
+      "image": "https://miro.medium.com/v2/resize:fit:1200/1*VhDpUbuZQC4tLoP9qQ6W5A.jpeg",
+      "createdAt": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Colosseum",
+      "description": "Ancient Roman amphitheater in the center of Rome",
+      "fullInfo": "The Colosseum is an oval amphitheater in the center of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheater ever built, and is still the largest standing amphitheater in the world today, despite its age.",
+      "country": "Italy",
+      "year": "80 AD",
+      "duration": "5 days",
+      "price": "$1,800",
+      "image": "https://images.unsplash.com/photo-1529260830199-42c24126f198?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "createdAt": "2025-01-20T14:45:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Parthenon",
+      "description": "Ancient temple dedicated to the goddess Athena",
+      "fullInfo": "The Parthenon is a former temple on the Athenian Acropolis, Greece, dedicated to the goddess Athena, whom the people of Athens considered their patron. Construction began in 447 BC when the Athenian Empire was at the peak of its power.",
+      "country": "Greece",
+      "year": "432 BC",
+      "duration": "6 days",
+      "price": "$2,100",
+      "image": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "createdAt": "2025-01-25T09:15:00Z"
+    }
+  ]
+}

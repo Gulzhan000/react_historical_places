@@ -1,27 +1,42 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { useState } from "react";
 import Layout from "./layout/Layout";
 
-// Существующие страницы
 import PostsList from "./pages/PostsList";
 import PostDetail from "./pages/PostDetail";
-
-// CRUD для туров / корзины
-import BasketList from "./pages/BasketList";
-import CreateOrder from "./pages/CreateOrder";
-import UpdateOrder from "./pages/UpdateOrder";
+import ToursList from "./pages/TourList";
+import CreateTour from "./pages/CreateTour";
+import EditTour from "./pages/EditTour";
+import AboutUs from "./pages/AboutUs";
+import Contacts from "./pages/Contacts";
+import Favorites from "./pages/Favorites";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import Profile from "./pages/Profile";
 
 export default function App() {
+  const [isAuth, setIsAuth] = useState(
+    localStorage.getItem("isAuth") === "true"
+  );
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        {/* Главная страница со списком исторических мест */}
         <Route index element={<PostsList />} />
         <Route path="post/:id" element={<PostDetail />} />
-
-        {/* Страницы CRUD для туров / корзины */}
-        <Route path="basket-list" element={<BasketList />} />
-        <Route path="create-order" element={<CreateOrder />} />
-        <Route path="update-order/:id" element={<UpdateOrder />} />
+        <Route path="tours" element={<ToursList />} />
+        <Route path="create-tour" element={<CreateTour />} />
+        <Route path="edit-tour/:id" element={<EditTour />} />
+        <Route path="about" element={<AboutUs />} />
+        <Route path="contacts" element={<Contacts />} />
+        <Route path="favorites" element={<Favorites />} />
+        <Route path="signin" element={<SignIn setIsAuth={setIsAuth} />} />
+        <Route path="signup" element={<SignUp />} />
+        <Route
+          path="profile"
+          element={
+            isAuth ? <Profile /> : <Navigate to="/signin" />
+          }
+        />
       </Route>
     </Routes>
   );

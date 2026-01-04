@@ -14,12 +14,10 @@
     transition: background 0.3s, transform 0.2s;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
-/* Create button - bigger and noticeable */
 .btn-create {
     background: #4caf50;
     color: white;
-    padding: 12px 24px; /* увеличенный размер */
+    padding: 12px 24px; 
     font-size: 16px;
 }
 .btn-create:hover {
@@ -27,18 +25,16 @@
     transform: translateY(-2px);
 }
 
-/* Edit button - светлый голубой */
 .btn-edit {
-    background: #4A90E2; /* светлый голубой */
+    background: #4A90E2;
     color: white;
     padding: 8px 16px;
 }
 .btn-edit:hover {
-    background: #6BAFF5; /* чуть светлее при hover */
+    background: #6BAFF5; 
     transform: translateY(-2px);
 }
 
-/* Delete button - красный */
 .btn-delete {
     background: #f44336;
     color: white;
